@@ -7,6 +7,8 @@ var hbs = require('hbs');
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const currentMonth = new Date().getMonth();
 
+//commit commentaire
+
 // View Engine Setup
 app.set('views', path.join(__dirname))
 app.set('view engine', 'hbs')
