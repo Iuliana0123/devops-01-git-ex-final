@@ -40,6 +40,22 @@ app.get('/', function (req, res) {
 	 })
 });
 
+app.get('/about', function (req, res) {
+	res.render('./views/About', {
+		title: 'About us',
+		values: [
+			{
+				name: 'Independant',
+				desc: 'Blablabla'
+			},
+			{
+				name: 'Negotiable',
+				desc: 'Blabla too'
+			}
+		]
+	})
+});
+
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });
